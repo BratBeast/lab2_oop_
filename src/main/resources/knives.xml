@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Knife>
+  <Item id="k1">
+    <Type>ніж</Type><Handy>одноручна</Handy><Origin>Україна</Origin>
+    <Visual><LengthCm>15</LengthCm><WidthMm>25</WidthMm>
+      <Material>сталь</Material><Handle><Wood>дуб</Wood></Handle><Fuller>false</Fuller>
+    </Visual><Value>true</Value>
+  </Item>
+  <Item id="k2">
+    <Type>шабля</Type><Handy>одноручна</Handy><Origin>Польща</Origin>
+    <Visual><LengthCm>80</LengthCm><WidthMm>35</WidthMm>
+      <Material>сталь</Material><Handle><Metal/></Handle><Fuller>true</Fuller>
+    </Visual><Value>true</Value>
+  </Item>
+  <Item id="k3">
+    <Type>кинджал</Type><Handy>одноручна</Handy><Origin>Італія</Origin>
+    <Visual><LengthCm>25</LengthCm><WidthMm>30</WidthMm>
+      <Material>мідь</Material><Handle><Wood>горіх</Wood></Handle><Fuller>true</Fuller>
+    </Visual><Value>true</Value>
+  </Item>
+  <Item id="k4">
+    <Type>ніж</Type><Handy>одноручна</Handy><Origin>Швеція</Origin>
+    <Visual><LengthCm>10</LengthCm><WidthMm>10</WidthMm>
+      <Material>сталь</Material><Handle><Plastic/></Handle><Fuller>false</Fuller>
+    </Visual><Value>false</Value>
+  </Item>
+  <Item id="k5">
+    <Type>шабля</Type><Handy>дворучна</Handy><Origin>Японія</Origin>
+    <Visual><LengthCm>90</LengthCm><WidthMm>40</WidthMm>
+      <Material>сталь</Material><Handle><Wood>бук</Wood></Handle><Fuller>true</Fuller>
+    </Visual><Value>true</Value>
+  </Item>
+  <Item id="k6">
+    <Type>кинджал</Type><Handy>одноручна</Handy><Origin>Україна</Origin>
+    <Visual><LengthCm>22</LengthCm><WidthMm>28</WidthMm>
+      <Material>чавун</Material><Handle><Metal/></Handle><Fuller>false</Fuller>
+    </Visual><Value>false</Value>
+  </Item>
+</Knife>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:simpleType name="Text"><xs:restriction base="xs:token"><xs:minLength value="1"/></xs:restriction></xs:simpleType>
+ <xs:simpleType name="WeaponType"><xs:restriction base="xs:string"><xs:enumeration value="ніж"/><xs:enumeration value="кинджал"/><xs:enumeration value="шабля"/></xs:restriction></xs:simpleType>
+ <xs:simpleType name="HandyType"><xs:restriction base="xs:string"><xs:enumeration value="одноручна"/><xs:enumeration value="дворучна"/></xs:restriction></xs:simpleType>
+ <xs:simpleType name="MaterialType"><xs:restriction base="xs:string"><xs:enumeration value="сталь"/><xs:enumeration value="чавун"/><xs:enumeration value="мідь"/></xs:restriction></xs:simpleType>
+ <xs:simpleType name="Dimension"><xs:restriction base="xs:decimal"><xs:minInclusive value="10"/></xs:restriction></xs:simpleType>
+ <xs:complexType name="HandleType"><xs:choice>
+  <xs:element name="Wood" type="Text"/>
+  <xs:element name="Plastic"><xs:complexType/></xs:element>
+  <xs:element name="Metal"><xs:complexType/></xs:element>
+ </xs:choice></xs:complexType>
+ <xs:complexType name="VisualType"><xs:sequence>
+  <xs:element name="LengthCm" type="Dimension"/><xs:element name="WidthMm" type="Dimension"/>
+  <xs:element name="Material" type="MaterialType"/><xs:element name="Handle" type="HandleType"/>
+  <xs:element name="Fuller" type="xs:boolean"/>
+ </xs:sequence></xs:complexType>
+ <xs:complexType name="KnifeType"><xs:sequence>
+  <xs:element name="Type" type="WeaponType"/><xs:element name="Handy" type="HandyType"/>
+  <xs:element name="Origin" type="Text"/><xs:element name="Visual" type="VisualType"/>
+  <xs:element name="Value" type="xs:boolean"/>
+ </xs:sequence><xs:attribute name="id" type="xs:ID" use="required"/></xs:complexType>
+ <xs:element name="Knife"><xs:complexType><xs:sequence>
+  <xs:element name="Item" type="KnifeType" maxOccurs="unbounded"/>
+ </xs:sequence></xs:complexType></xs:element>
+</xs:schema>
